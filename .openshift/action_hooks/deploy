@@ -26,4 +26,4 @@ echo "Installing STOMP message queue..."
 pip install python-daemon
 pip install coilmq
 echo "Starting STOMP message queue..."
-coilmq -b ${OPENSHIFT_PYTHON_IP} -p 15000 -d
+coilmq -b ${OPENSHIFT_PYTHON_IP} -p 15000 -d -l ${OPENSHIFT_PYTHON_LOG_DIR} --debug
