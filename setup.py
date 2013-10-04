@@ -17,5 +17,8 @@ setuptools.setup(
         'PyYAML',
         'pytz'
     ],
+    scripts=[
+        'bin/alerta',
+    ],
     keywords='alert monitoring system'
 )
