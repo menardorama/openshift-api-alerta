@@ -1,8 +1,5 @@
 #!/bin/bash
 
-echo "Creating log directory ..."
-mkdir /var/log/alerta
-
 echo "Configuring alerta ..."
 cat <<EOF > ${OPENSHIFT_DATA_DIR}/alerta.conf
 [DEFAULT]
