@@ -22,6 +22,6 @@ try:
 except IOError:
     pass
 
-os.environ['ALERTA_CONF'] = os.environ['OPENSHIFT_DATA_DIR']
+os.environ['ALERTA_CONF'] = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'alerta.conf')
 
 from alerta.api.v2 import app as application
