@@ -21,6 +21,8 @@ setuptools.setup(
     ],
     scripts=[
         'bin/alerta',
+        'bin/alert-query',
+        'bin/alert-sender',
     ],
     keywords='alert monitoring system'
 )
