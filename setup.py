@@ -19,10 +19,8 @@ setuptools.setup(
         'PyYAML',
         'pytz'
     ],
-    entry_points={
-        'console_scripts': [
-            'alerta = wsgi.alerta.server.shell:main',
-        ]
-    },
+    scripts=[
+        'bin/alerta',
+    ],
     keywords='alert monitoring system'
 )
