@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Configuring alerta ..."
+echo "Configuring alerta..."
 cat <<EOF > ${OPENSHIFT_DATA_DIR}/alerta.conf
 [DEFAULT]
 timezone = Europe/London
@@ -10,7 +10,7 @@ use_syslog = no
 
 mongo_username = ${OPENSHIFT_MONGODB_DB_USERNAME}
 mongo_password = ${OPENSHIFT_MONGODB_DB_PASSWORD}
-mongo_datatbase = ${OPENSHIFT_APP_NAME}
+mongo_database = ${OPENSHIFT_APP_NAME}
 mongo_host = ${OPENSHIFT_MONGODB_DB_HOST}
 mongo_port = ${OPENSHIFT_MONGODB_DB_PORT}
 
@@ -22,7 +22,8 @@ EOF
 
 export ALERTA_CONF=${OPENSHIFT_DATA_DIR}/alerta.conf
 
-echo "Installing STOMP message queue ..."
+echo "Installing STOMP message queue..."
 pip install python-daemon
 pip install coilmq
+echo "Starting STOMP message queue..."
 coilmq -b ${OPENSHIFT_PYTHON_IP} -p 15000 -d
