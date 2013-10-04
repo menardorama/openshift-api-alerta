@@ -16,7 +16,7 @@ mongo_port = ${OPENSHIFT_MONGODB_DB_PORT}
 
 stomp_host = ${OPENSHIFT_PYTHON_IP}
 stomp_port = 15000
-inbound_queue: /queue/alerts
+inbound_queue = /queue/alerts
 
 EOF
 
