@@ -30,4 +30,5 @@ EOF
 export ALERTA_CONF=${OPENSHIFT_DATA_DIR}/alerta.conf
 
 echo "Starting alerta server daemon..."
+test -f ${OPENSHIFT_TMP_DIR}/alerta.pid && pkill -F ${OPENSHIFT_TMP_DIR}/alerta.pid
 alerta --pid-dir ${OPENSHIFT_TMP_DIR}
