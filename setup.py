@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name='openshift-api-alerta',
-    version='3.0.0',
+    version='3.0.1',
     description='Alerta monitoring framework on OpenShift',
     author='Nick Satterly',
     author_email='nick.satterly@theguardian.com',
