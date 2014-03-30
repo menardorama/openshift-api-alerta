@@ -2,9 +2,9 @@
 import setuptools
 
 setuptools.setup(
-    name='alerta',
-    version='2.0.48',
-    description='Alerta monitoring framework',
+    name='openshift-api-alerta',
+    version='3.0.0',
+    description='Alerta monitoring framework on OpenShift',
     author='Nick Satterly',
     author_email='nick.satterly@theguardian.com',
     url='http://github.com/guardian/alerta',
@@ -13,16 +13,7 @@ setuptools.setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'Flask',
-        'pymongo',
-        'stomp.py',
-        'PyYAML',
-        'pytz'
+        'alerta'
     ],
-    scripts=[
-        'bin/alerta',
-        'bin/alert-query',
-        'bin/alert-sender',
-    ],
-    keywords='alert monitoring system'
+    keywords='alert monitoring system openshift paas'
 )
