@@ -14,6 +14,8 @@ mongo_database = ${OPENSHIFT_APP_NAME}
 mongo_host = ${OPENSHIFT_MONGODB_DB_HOST}
 mongo_port = ${OPENSHIFT_MONGODB_DB_PORT}
 
+amqp_url = mongodb://${OPENSHIFT_MONGODB_DB_HOST}:${OPENSHIFT_MONGODB_DB_PORT}/${OPENSHIFT_APP_NAME}
+
 EOF
 
 export ALERTA_CONF=${OPENSHIFT_DATA_DIR}/alerta.conf
