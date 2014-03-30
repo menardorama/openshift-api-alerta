@@ -13,7 +13,7 @@ setuptools.setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'alerta'
+        'alerta==3.0.1'
     ],
     keywords='alert monitoring system openshift paas'
 )
