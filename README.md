@@ -27,6 +27,12 @@ Alerta API on OpenShift
         merge = refs/heads/master
 ```
 
+To deploy following a git repo change:
+
     $ git pull openshift master
     $ git push
     $ git push openshift
+
+To deploy without a git repo change:
+    $ rhc ssh api
+    > ctl_app deploy
