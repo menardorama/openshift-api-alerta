@@ -24,4 +24,6 @@ except IOError:
 
 os.environ['ALERTA_CONF'] = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'alerta.conf')
 
+import _strptime
+
 from alerta.app import app as application
