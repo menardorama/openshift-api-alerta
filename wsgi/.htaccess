@@ -1,2 +1,2 @@
 RewriteEngine On
-RedirectMatch permanent ^/$ /api/
+RedirectMatch permanent ^/$ /api
