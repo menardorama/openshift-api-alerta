@@ -13,7 +13,7 @@ setuptools.setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'alerta'
+        'alerta==3.0.8'
     ],
     dependency_links = [
         'https://github.com/guardian/alerta/tarball/master#egg'
