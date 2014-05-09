@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name='openshift-api-alerta',
-    version='3.0',
+    version='3.1.0',
     description='Alerta monitoring framework on OpenShift',
     author='Nick Satterly',
     author_email='nick.satterly@theguardian.com',
@@ -13,10 +13,10 @@ setuptools.setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'alerta==3.0.8'
+        'alerta-app==3.1.0'
     ],
     dependency_links = [
-        'https://github.com/guardian/alerta/tarball/master#egg=alerta-3.0.8'
+        'https://github.com/guardian/alerta/tarball/master#egg=alerta-app-3.1.0'
     ],
     keywords='alert monitoring system openshift paas'
 )
