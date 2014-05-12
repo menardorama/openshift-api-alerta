@@ -3,9 +3,7 @@
 echo "Configuring alerta..."
 cat <<EOF > ${OPENSHIFT_DATA_DIR}/alerta.conf
 [DEFAULT]
-timezone = Europe/London
 log_dir = ${OPENSHIFT_PYTHON_LOG_DIR}
-parser_dir = ${OPENSHIFT_DATA_DIR}
 use_syslog = no
 debug = yes
 
