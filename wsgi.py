@@ -12,7 +12,7 @@ except IOError:
 # line, it's possible required libraries won't be in your searchable path
 #
 
-os.environ['ALERTA_SVR_CONFIG_FILE'] = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'alertad.conf')
+os.environ['ALERTA_SVR_CONF_FILE'] = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], 'alertad.conf')
 
 from alerta.app import app as application
 
