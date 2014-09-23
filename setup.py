@@ -10,8 +10,8 @@ setuptools.setup(
     url='http://github.com/guardian/alerta',
     license='Apache License 2.0',
     install_requires=[
-        'alerta-server==3.2.4',
-        'alerta==3.2.4'
+        'alerta-server==3.2.6',
+        'alerta==3.2.6'
     ],
     dependency_links=[
         'https://github.com/guardian/alerta/tarball/release/3.2#egg=alerta-server-3.2.6',
