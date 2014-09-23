@@ -14,8 +14,8 @@ setuptools.setup(
         'alerta==3.2.4'
     ],
     dependency_links=[
-        'https://github.com/guardian/alerta/tarball/release/3.2#egg=alerta-server-3.2.4',
-        'https://github.com/alerta/python-alerta-client/tarball/master#egg=alerta-3.2.4'
+        'https://github.com/guardian/alerta/tarball/release/3.2#egg=alerta-server-3.2.6',
+        'https://github.com/alerta/python-alerta-client/tarball/master#egg=alerta-3.2.6'
     ],
     keywords='alert monitoring system openshift paas'
 )
