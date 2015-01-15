@@ -16,7 +16,7 @@ OAUTH2_CLIENT_ID = '744241357326-2m37jti56hjvapc1137la03d27pnpoa1.apps.googleuse
 OAUTH2_CLIENT_SECRET = 'iyTk0Feiz_sXX9BbJhJ_ssvY'
 ALLOWED_EMAIL_DOMAINS = ['*']
 
-CORS_ORIGINS = ['http://try.alerta.io', 'http://explorer.alerta.io', 'http://alerta-test-3.herokuapp.com']
+CORS_ORIGINS = ['http://try.alerta.io', 'http://explorer.alerta.io', 'http://alerta.herokuapp.com']
 
 PLUGINS = ['reject']
 EOF
