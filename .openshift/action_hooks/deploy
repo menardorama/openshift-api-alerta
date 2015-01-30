@@ -18,7 +18,7 @@ ALLOWED_EMAIL_DOMAINS = ['*']
 
 CORS_ORIGINS = ['http://try.alerta.io', 'http://explorer.alerta.io', 'http://alerta.herokuapp.com']
 
-PLUGINS = ['reject']
+PLUGINS = ['reject','geoip']
 EOF
 
 cat ${OPENSHIFT_DATA_DIR}/alertad.conf

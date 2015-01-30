@@ -1,0 +1,1 @@
+-e git+https://github.com/alerta/alerta-contrib.git#egg=alerta-geoip&subdirectory=plugins/geoip
