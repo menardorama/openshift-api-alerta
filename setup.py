@@ -1,7 +1,7 @@
 
 import setuptools
 
-ALERTA_SERVER_VERSION = '4.1.7'
+ALERTA_SERVER_VERSION = '4.1.8'
 ALERTA_CLIENT_VERSION = '4.1.0'
 
 setuptools.setup(
