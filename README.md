@@ -1,7 +1,7 @@
 Alerta API on OpenShift
 =======================
 
-[Alerta](http://alerta.io) is a alerting server based on Flask with an AngularJS web front-end for alert visualisation and built-in support for many monitoring tools that is also easily extensible using a command-line tool or API.
+[Alerta](http://alerta.io) is an alerting server based on Flask with an AngularJS web front-end.
 
 RedHat [OpenShift](https://www.openshift.com/products/online) is a PaaS that can be used to run web applications like [Flask apps](https://developers.openshift.com/en/python-flask.html) for [free](https://www.openshift.com/products/pricing). 
 
@@ -33,7 +33,7 @@ Show all apps running in OpenShift:
 
     $ rhc show-app alerta
 
-    $ rhc tail 
+    $ rhc tail alerta
 
 
 If problems persist, try deleting the app and recreating:
