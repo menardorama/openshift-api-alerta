@@ -42,7 +42,7 @@ Change an environment variable for running app:
 Troubleshooting
 ---------------
 
-Show all apps running in OpenShift:
+To display application information and log files:
 
     $ rhc show-app alerta
 
@@ -52,8 +52,6 @@ Show all apps running in OpenShift:
 If problems persist, try deleting the app and recreating:
 
     $ rhc app delete -a alerta
-
-TBC
 
 License
 -------
