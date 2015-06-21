@@ -2,6 +2,7 @@
 
 echo "Config settings..."
 
+cat >${OPENSHIFT_DATA_DIR}/alertad.conf << EOF
 SECRET_KEY = '$OPENSHIFT_SECRET_TOKEN'
 
 MONGO_HOST = '${OPENSHIFT_MONGODB_DB_HOST}'
