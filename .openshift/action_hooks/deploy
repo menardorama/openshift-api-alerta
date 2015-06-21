@@ -2,8 +2,7 @@
 
 echo "Config settings..."
 
-cat >${OPENSHIFT_DATA_DIR}/alertad.conf << EOF
-SECRET_KEY = '$(< /dev/urandom tr -dc A-Za-z0-9_\!\@\#\$\%\^\&\*\(\)-+= | head -c 32)'
+SECRET_KEY = '$OPENSHIFT_SECRET_TOKEN'
 
 MONGO_HOST = '${OPENSHIFT_MONGODB_DB_HOST}'
 MONGO_PORT = ${OPENSHIFT_MONGODB_DB_PORT}
@@ -11,12 +10,11 @@ MONGO_DATABASE = '${OPENSHIFT_APP_NAME}'
 MONGO_USERNAME = '${OPENSHIFT_MONGODB_DB_USERNAME}'
 MONGO_PASSWORD = '${OPENSHIFT_MONGODB_DB_PASSWORD}'
 
-AUTH_REQUIRED = True
-OAUTH2_CLIENT_ID = '379647311730-sj130ru952o3o7ig8u0ts8np2ojivr8d.apps.googleusercontent.com'
-OAUTH2_CLIENT_SECRET = '8HrqJhbrYn9oDtaJqlIBacaW'
-ALLOWED_EMAIL_DOMAINS = ['*']
-
-CORS_ORIGINS = ['http://try.alerta.io', 'http://explorer.alerta.io', 'http://alerta.herokuapp.com', 'chrome-extension://jplkjnjaegjgacpfafdopnpnhmobhlaf']
+AUTH_REQUIRED = $AUTH_REQUIRED
+OAUTH2_CLIENT_ID = '$CLIENT_ID
+OAUTH2_CLIENT_SECRET = '$CLIENT_SECRET'
+ALLOWED_EMAIL_DOMAINS = ['$ALLOWED_EMAIL_DOMAIN']
+ALLOWED_GITHUB_ORGS = ['$ALLOWED_GITHUB_ORG']
 
 PLUGINS = ['reject','geoip']
 EOF
