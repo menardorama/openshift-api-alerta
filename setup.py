@@ -1,8 +1,8 @@
 
 import setuptools
 
-ALERTA_SERVER_VERSION = '4.4.6'
-ALERTA_CLIENT_VERSION = '4.1.4'
+ALERTA_SERVER_VERSION = '4.4.8'
+ALERTA_CLIENT_VERSION = '4.2.0'
 
 setuptools.setup(
     name='openshift-api-alerta',
