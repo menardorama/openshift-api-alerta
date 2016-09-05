@@ -1,8 +1,8 @@
 
 import setuptools
 
-ALERTA_SERVER_VERSION = '4.7.10'
-ALERTA_CLIENT_VERSION = '4.7.9'
+ALERTA_SERVER_VERSION = '4.8.0'
+ALERTA_CLIENT_VERSION = '4.8.1'
 
 setuptools.setup(
     name='openshift-api-alerta',
@@ -18,7 +18,7 @@ setuptools.setup(
     ],
     dependency_links=[
         'https://github.com/guardian/alerta/tarball/master#egg=alerta-server-%s' % ALERTA_SERVER_VERSION,
-        'https://github.com/alerta/python-alerta-client/tarball/master#egg=alerta-%s' % ALERTA_CLIENT_VERSION
+        'https://github.com/alerta/python-alerta/tarball/master#egg=alerta-%s' % ALERTA_CLIENT_VERSION
     ],
     keywords='alert monitoring system openshift paas'
 )
