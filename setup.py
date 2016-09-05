@@ -13,6 +13,7 @@ setuptools.setup(
     url='http://github.com/guardian/alerta',
     license='Apache License 2.0',
     install_requires=[
+        'Flask>=0.10.1',
         'alerta-server==%s' % ALERTA_SERVER_VERSION,
         'alerta==%s' % ALERTA_CLIENT_VERSION
     ],
