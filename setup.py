@@ -1,7 +1,7 @@
 
 import setuptools
 
-ALERTA_SERVER_VERSION = '4.8.0'
+ALERTA_SERVER_VERSION = '4.8.1'
 ALERTA_CLIENT_VERSION = '4.8.1'
 
 setuptools.setup(
@@ -14,7 +14,6 @@ setuptools.setup(
     license='Apache License 2.0',
     install_requires=[
         'Flask>=0.10.1',
-        'simplejson>=3.8.2',
         'alerta-server==%s' % ALERTA_SERVER_VERSION,
         'alerta==%s' % ALERTA_CLIENT_VERSION
     ],
