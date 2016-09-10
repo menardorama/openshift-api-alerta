@@ -15,11 +15,13 @@ setuptools.setup(
     install_requires=[
         'Flask>=0.10.1',
         'alerta-server==%s' % ALERTA_SERVER_VERSION,
-        'alerta==%s' % ALERTA_CLIENT_VERSION
+        'alerta==%s' % ALERTA_CLIENT_VERSION,
+        'alerta-geoip'
     ],
     dependency_links=[
         'https://github.com/guardian/alerta/tarball/master#egg=alerta-server-%s' % ALERTA_SERVER_VERSION,
-        'https://github.com/alerta/python-alerta/tarball/master#egg=alerta-%s' % ALERTA_CLIENT_VERSION
+        'https://github.com/alerta/python-alerta/tarball/master#egg=alerta-%s' % ALERTA_CLIENT_VERSION,
+        'https://github.com/alerta/alerta-contrib.git#subdirectory=plugins/geoip'
     ],
     keywords='alert monitoring system openshift paas'
 )
