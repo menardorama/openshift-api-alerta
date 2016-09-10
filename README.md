@@ -56,5 +56,5 @@ If problems persist, try deleting the app and recreating:
 License
 -------
 
-Copyright (c) 2015 Nick Satterly. Available under the MIT License.
+Copyright (c) 2015-2016 Nick Satterly. Available under the MIT License.
 
