@@ -2,3 +2,4 @@ Flask
 alerta-server
 alerta-geoip
 alerta
+gunicorn
